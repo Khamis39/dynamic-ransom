@@ -54,6 +54,7 @@ def main():
     fh = open(os.environ['USERPROFILE'] + "\\Desktop\\counter.bak", "w+")
     shutil.copy("script.py", os.environ['USERPROFILE'] + "\\Desktop\\")
     fh.write("0")
+    fh.flush()
     fh.close()
 
     # Create new watch-dogs
